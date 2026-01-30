@@ -1,0 +1,40 @@
+name: Test and Validate Model Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Pytest (all tests)
+        run: pytest
+
+      - name: Run Pytest
+        run: pytest test/test.py
+
+      - name: Run train_model.py
+        run: |
+          timestamp=$(date '+%Y%m%d%H%M%S')
+          python src/train_model.py --timestamp "$timestamp"
+
+      - name: Run evaluate_model.py
+        run: |
+          timestamp=$(date '+%Y%m%d%H%M%S')
+          python src/evaluate_model.py --timestamp "$timestamp"
