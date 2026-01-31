@@ -21,13 +21,13 @@ jobs:
           python-version: 3.9
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r Github_Labs/Lab2/requirements.txt
 
       - name: Run Pytest (all tests)
         run: pytest
 
       - name: Run Pytest
-        run: pytest test/test.py
+        run: pytest
 
       - name: Run train_model.py
         run: |
