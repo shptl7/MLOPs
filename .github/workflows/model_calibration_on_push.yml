@@ -8,6 +8,8 @@ on:
 jobs:
   retrain:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout code
@@ -54,9 +56,8 @@ jobs:
       - name: Commit and Push Changes
         run: |
           git config --global user.email "256461987+shptl7@users.noreply.github.com"
-          git config --global user.name "Shrey Patel"
+          git config --global user.name "shptl7"
           git config --global credential.helper store
-          echo "https://x-access-token:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
           metrics_filename="Github_Labs/Lab2/metrics/${timestamp}_metrics.json"
           model_filename="Github_Labs/Lab2/models/model_${timestamp}.joblib"
           git add -f "$metrics_filename" "$model_filename"

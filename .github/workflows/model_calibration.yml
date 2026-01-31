@@ -7,6 +7,8 @@ on:
 jobs:
   retrain:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout code
@@ -55,7 +57,7 @@ jobs:
       - name: Commit and Push Changes
         run: |
           git config --global user.email "256461987+shptl7@users.noreply.github.com"
-          git config --global user.name "Shrey Patel"
+          git config --global user.name "shptl7"
           git add $GITHUB_WORKSPACE/metrics/$metrics_filename $GITHUB_WORKSPACE/models/$model_filename
           git commit -m "Add metrics and updated model"
           git push
