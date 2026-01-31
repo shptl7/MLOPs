@@ -6,10 +6,10 @@ Watch the tutorial video for this lab at [Github action Lab2](https://youtu.be/c
 
 ## Changes Made
 
-- Changed the model from Random Forest Classifier to Catboost
-- Changed dataset to Breast Cancer Detection
-- Added some test cases for new dataset
-- Added a new workflow called test_and_validate.yml which runs test cases
+- Changed the model from Random Forest Classifier to Catboost.
+- Changed dataset to Breast Cancer Detection.
+- Added some test cases for new dataset.
+- Added a new workflow called test_and_validate.yml which runs test cases.
 
 ## Prerequisites
 
