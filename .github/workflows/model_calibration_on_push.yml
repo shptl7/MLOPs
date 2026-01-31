@@ -40,10 +40,10 @@ jobs:
 
       - name: Evaluate Model and Log Metrics
         run: |
-          python Github_Labs/Lab2/src/evaluate_model.py --timestamp "$timestamp"
+          cd Github_Labs/Lab2
+          python src/evaluate_model.py --timestamp "$timestamp"
           metrics_filename="${timestamp}_metrics.json"
-          mkdir -p Github_Labs/Lab2/metrics
-          mv "$metrics_filename" "Github_Labs/Lab2/metrics/$metrics_filename"
+          # File is already created in metrics/ directory by the script
 
       - name: Store and Version the New Model
         run: |
