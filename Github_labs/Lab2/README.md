@@ -5,7 +5,7 @@ This repository demonstrates how to use GitHub Actions to automate the process o
 Watch the tutorial video for this lab at [Github action Lab2](https://youtu.be/cj5sXIMZUjQ)
 
 
-## Prerequisites
+## Prerequisitesdf
 
 - [GitHub](https://github.com) account
 - Basic knowledge of Python and machine learning
