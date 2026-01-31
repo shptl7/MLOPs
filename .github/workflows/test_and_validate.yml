@@ -27,15 +27,3 @@ jobs:
         run: |
           cd Github_Labs/Lab2
           pytest test/
-
-      - name: Run train_model.py
-        run: |
-          timestamp=$(date '+%Y%m%d%H%M%S')
-          cd Github_Labs/Lab2
-          python src/train_model.py --timestamp "$timestamp"
-
-      - name: Run evaluate_model.py
-        run: |
-          timestamp=$(date '+%Y%m%d%H%M%S')
-          cd Github_Labs/Lab2
-          python src/evaluate_model.py --timestamp "$timestamp"
