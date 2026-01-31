@@ -24,7 +24,9 @@ jobs:
         run: pip install -r Github_Labs/Lab2/requirements.txt
 
       - name: Run Pytest (all tests)
-        run: pytest Github_Labs/Lab2/test/
+        run: |
+          cd Github_Labs/Lab2
+          pytest test/
 
       - name: Run train_model.py
         run: |
