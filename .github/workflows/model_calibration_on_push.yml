@@ -36,7 +36,8 @@ jobs:
 
       - name: Retrain Model
         run: |
-          python Github_Labs/Lab2/src/train_model.py --timestamp "$timestamp"
+          cd Github_Labs/Lab2
+          python src/train_model.py --timestamp "$timestamp"
 
       - name: Evaluate Model and Log Metrics
         run: |
@@ -47,9 +48,8 @@ jobs:
 
       - name: Store and Version the New Model
         run: |
-          model_filename="model_${timestamp}_dt_model.joblib"
-          mkdir -p Github_Labs/Lab2/models
-          mv "$model_filename" "Github_Labs/Lab2/models/$model_filename"
+          cd Github_Labs/Lab2
+          # Model is already created in models/ directory by the training script
 
       - name: Commit and Push Changes
         run: |
