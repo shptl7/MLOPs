@@ -52,7 +52,7 @@ jobs:
       - name: Store and Version the New Model
         run: |
           timestamp=$(cat timestamp.txt)
-          model_filename="model_${timestamp}_dt_model.joblib"
+          model_filename="model_${timestamp}.joblib"
           mv $model_filename $GITHUB_WORKSPACE/models/$model_filename
 
       - name: Commit and Push Changes
