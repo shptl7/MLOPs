@@ -61,6 +61,7 @@ jobs:
         run: |
           git config --global user.email "256461987+shptl7@users.noreply.github.com"
           git config --global user.name "shptl7"
+          git pull --ff-only
           git add $GITHUB_WORKSPACE/metrics/$metrics_filename $GITHUB_WORKSPACE/models/$model_filename
           git commit -m "Add metrics and updated model"
           git push
