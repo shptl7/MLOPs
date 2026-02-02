@@ -53,7 +53,9 @@ jobs:
         run: |
           timestamp=$(cat timestamp.txt)
           model_filename="model_${timestamp}.joblib"
-          mv $model_filename $GITHUB_WORKSPACE/models/$model_filename
+          if [ -f "Github_Labs/Lab2/models/$model_filename"]; then
+             mv $model_filename $GITHUB_WORKSPACE/models/$model_filename
+          fi
 
       - name: Commit and Push Changes
         run: |
