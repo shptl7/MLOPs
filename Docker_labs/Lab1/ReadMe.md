@@ -83,3 +83,9 @@ Lab1/
     ├── requirements.txt    # Python dependencies
     └── training.log       # Generated during training
 ```
+
+---
+
+## Local Run Screenshots
+
+![Docker Build and Run](Docker_local_run.png)
