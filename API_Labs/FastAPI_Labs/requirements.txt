@@ -1,0 +1,5 @@
+scikit-learn==1.5.1
+fastapi[all]==0.111.1
+catboost==1.2.7
+pandas==2.2.3
+pydantic

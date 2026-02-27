@@ -1,0 +1,42 @@
+{
+  "model_name": "CatBoostClassifier",
+  "dataset": "Wine Recognition (sklearn)",
+  "num_classes": 3,
+  "class_names": [
+    "class_0",
+    "class_1",
+    "class_2"
+  ],
+  "feature_names": [
+    "alcohol",
+    "malic_acid",
+    "ash",
+    "alcalinity_of_ash",
+    "magnesium",
+    "total_phenols",
+    "flavanoids",
+    "nonflavanoid_phenols",
+    "proanthocyanins",
+    "color_intensity",
+    "hue",
+    "od280/od315_of_diluted_wines",
+    "proline"
+  ],
+  "accuracy": 1.0,
+  "feature_importances": {
+    "alcohol": 0.101748,
+    "malic_acid": 0.055571,
+    "ash": 0.010366,
+    "alcalinity_of_ash": 0.009607,
+    "magnesium": 0.034299,
+    "total_phenols": 0.053578,
+    "flavanoids": 0.240404,
+    "nonflavanoid_phenols": 0.017152,
+    "proanthocyanins": 0.005085,
+    "color_intensity": 0.181642,
+    "hue": 0.015537,
+    "od280/od315_of_diluted_wines": 0.084381,
+    "proline": 0.190631
+  },
+  "trained_at": "2026-02-27T05:26:55.690299+00:00"
+}
