@@ -1,0 +1,36 @@
+artifact_path: file:///c:/Users/Shrey Patel/Desktop/MDhamani MLOPs main MLFlow_Lab-Lab2/mlruns/1/models/m-e19af85fa8c14da7b48b5f6a885e06ea/artifacts
+flavors:
+  catboost:
+    catboost_version: 1.2.7
+    code: null
+    data: model.cb
+    model_type: CatBoostClassifier
+    save_format: cbm
+  python_function:
+    data: model.cb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.catboost
+    python_version: 3.11.14
+is_signature_from_type_hint: false
+mlflow_version: 3.9.0
+model_id: m-e19af85fa8c14da7b48b5f6a885e06ea
+model_size_bytes: 491374
+model_uuid: m-e19af85fa8c14da7b48b5f6a885e06ea
+prompts: null
+run_id: 79025e9860b84002ad113597fb04c811
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "sepal length (cm)", "required": true}, {"type":
+    "double", "name": "sepal width (cm)", "required": true}, {"type": "double", "name":
+    "petal length (cm)", "required": true}, {"type": "double", "name": "petal width
+    (cm)", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1, 1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-03-14 10:08:01.203869'
