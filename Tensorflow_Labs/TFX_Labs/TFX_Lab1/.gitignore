@@ -1,16 +1,7 @@
-# Python-generated files
+# Python caches
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
-env
-venv
-catboost_info
+*.py[cod]
+*$py.class
 
 # Jupyter Notebooks
 .ipynb_checkpoints/
@@ -24,6 +15,7 @@ ENV/
 
 # TFX / Pipeline Execution Artifacts
 /C:\tmp/
+/C:\tmp\tfx/
 beam-temp-*/
 
 # OS Generated Files
